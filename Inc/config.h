@@ -433,7 +433,7 @@
      //#define CONTROL_PWM_LEFT      0       // use RC PWM as input on the LEFT cable. Number indicates priority for dual-input. Disable DEBUG_SERIAL_USART2!
     #define CONTROL_PWM_RIGHT     0       // use RC PWM as input on the RIGHT cable. Number indicates priority for dual-input. Disable DEBUG_SERIAL_USART3!
     #define PRI_INPUT1            3, 0, 127, 255, 0  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
-    #define PRI_INPUT2            3, 0, 0, 1, 0  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
+    #define PRI_INPUT2            3, 0, 127, 255, 0  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
   #endif
 
   #define FILTER                  6553    // 0.1f [-] fixdt(0,16,16) lower value == softer filter [0, 65535] = [0.0 - 1.0].
