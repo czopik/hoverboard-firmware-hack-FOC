@@ -431,7 +431,7 @@
      //#define CONTROL_PWM_LEFT      0       // use RC PWM as input on the LEFT cable. Number indicates priority for dual-input. Disable DEBUG_SERIAL_USART2!
     #define CONTROL_PWM_RIGHT     0       // use RC PWM as input on the RIGHT cable. Number indicates priority for dual-input. Disable DEBUG_SERIAL_USART3!
     #define PRI_INPUT1 3, 0, 50, 100, 0  // Dla PA8: TYPE, MIN, MID, MAX, DEADBAND.
-    #define PRI_INPUT2 3, 0, 50, 100, 0  // Dla PA10: TYPE, MIN, MID, MAX, DEADBAND.
+    #define PRI_INPUT2 3, 100, 50, 0, 0  // Dla PA10: TYPE, MIN, MID, MAX, DEADBAND.
 
   #endif
 
