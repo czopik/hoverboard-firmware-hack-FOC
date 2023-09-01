@@ -421,8 +421,8 @@
 #define FLASH_WRITE_KEY       0x1005  // Flash memory writing key. Change this key to ignore the input calibrations from the flash memory and use the ones in config.h
 
 #define CONTROL_PWM_RIGHT     1       // use RC PWM as input on the RIGHT cable. Number indicates priority for dual-input. Disable DEBUG_SERIAL_USART3!
-#define PRI_INPUT1 3,     0, 50, 100,   0  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
-#define PRI_INPUT2 3,     0, 50, 100,   0  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
+#define PRI_INPUT1 3,     0, 2048, 4095,   0   // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
+#define PRI_INPUT2 3,     0, 2048, 4095,   0   // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
 
 #define FILTER                  65535    // 0.1f [-] fixdt(0,16,16) lower value == softer filter [0, 65535] = [0.0 - 1.0].
 #define SPEED_COEFFICIENT       16384   // 1.0f [-] fixdt(1,16,14) higher value == stronger. [0, 65535] = [-2.0 - 2.0]. In this case 16384 = 1.0 * 2^14
