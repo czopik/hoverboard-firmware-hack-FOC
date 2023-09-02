@@ -392,10 +392,10 @@
     #define FLASH_WRITE_KEY       0x1004  // Flash memory writing key. Change this key to ignore the input calibrations from the flash memory and use the ones in config.h
     // #define CONTROL_PPM_LEFT      0       // use PPM-Sum as input on the LEFT cable. Number indicates priority for dual-input. Disable CONTROL_SERIAL_USART2!
     #define CONTROL_PPM_RIGHT     0       // use PPM-Sum as input on the RIGHT cable. Number indicates priority for dual-input. Disable CONTROL_SERIAL_USART3!
-    #define PRI_INPUT1            3, -1000, 0, 1000, 100  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
-    #define PRI_INPUT2            3, -1000, 0, 1000, 100  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
+    #define PRI_INPUT1            3, -500, 0, 500, 100  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
+    #define PRI_INPUT2            3, 1000, 1500, 2000, 100  // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
   #endif
-  #define PPM_NUM_CHANNELS        6       // total number of PPM channels to receive, even if they are not used.
+  #define PPM_NUM_CHANNELS        1       // total number of PPM channels to receive, even if they are not used.
 
   // #define TANK_STEERING                   // use for tank steering, each input controls each wheel 
   // #define SUPPORT_BUTTONS                 // Define for PPM buttons support
